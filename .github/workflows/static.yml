@@ -21,6 +21,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# ---- (선택) Node 24 사전 강제 전환 테스트 ----
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+# ---------------------------------------------
+
 jobs:
   # Single deploy job since we're just deploying
   deploy:
